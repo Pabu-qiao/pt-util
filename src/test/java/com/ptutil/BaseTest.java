@@ -1,4 +1,4 @@
-/*package com.ptutil;
+package com.ptutil;
 
 import org.junit.After;
 import org.junit.Before;
@@ -17,4 +17,4 @@ public class BaseTest {
 	public void after() {
 		log.info("---------------------测试结束---------------------");
 	}
-}*/
+}

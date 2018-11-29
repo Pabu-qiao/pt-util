@@ -1,4 +1,4 @@
-/*package com.ptutil;
+package com.ptutil;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,13 +8,13 @@ import java.util.Map;
 import java.util.Set;
 
 import org.junit.Assert;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.http.ResponseEntity;
 
-class ResponseUtilTest extends BaseTest{
+public class ResponseUtilTest extends BaseTest{
 
 	@Test
-	void testToJson() {
+	public void testToJson() {
 		String temp="[{\"code\":\"01\",\"desc\":\"正常\"},{\"code\":\"02\",\"desc\":\"不正常\"},{\"code\":\"03\",\"desc\":\"未知\"}]";
 		ResponseEntity<String> json = ResponseUtil.toJson(temp);
 		Assert.assertEquals("转换String异常", "[{\"code\":\"01\",\"desc\":\"正常\"},{\"code\":\"02\",\"desc\":\"不正常\"},{\"code\":\"03\",\"desc\":\"未知\"}]", json.getBody());
@@ -36,4 +36,3 @@ class ResponseUtilTest extends BaseTest{
 	}
 
 }
-*/
